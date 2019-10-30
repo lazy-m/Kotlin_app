@@ -5,7 +5,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.lazy.kotlin_app.databinding.RecyclerViewItemBinding
 
-class SimpleAdapter(val userList:List<User>): RecyclerView.Adapter<SimpleAdapter.TestViewHolder>() {
+class SimpleAdapter(val userList:MutableList<User>): RecyclerView.Adapter<SimpleAdapter.TestViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int)= TestViewHolder(
         RecyclerViewItemBinding.inflate(LayoutInflater.from(parent.context),parent,false)
